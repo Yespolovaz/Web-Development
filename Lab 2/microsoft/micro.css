@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    width: min(90vw, 1193px);
+}
+
+header {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#products {
+    margin-right: -70px;
+    float: left;
+}
+
+.search {
+    float: right;
+    width: 25px;
+    margin: 30px;
+}
+
+.user {
+    width: 35px;
+    float: right;
+    margin: 0 10px;
+}
+
+#logo {
+    float: left;
+    width: 100px;
+    margin-right: 8px;
+    margin-left: 3px;
+}
+
+.mainphoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0dddd;
+    padding-left: 75px;
+}
+
+.smallPhotos {
+    display: flex;
+    width: 150px;
+    height: 130px;
+}
