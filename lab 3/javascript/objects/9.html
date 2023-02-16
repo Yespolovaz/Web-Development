@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">]
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calc() {
+            this.read = function() {
+                this.a = +prompt('a?', 0);
+                this.b = +prompt('b?', 0);
+            };
+
+            this.sum = function() {
+                return this.a + this.b;
+            };
+
+            this.mul = function() {
+                return this.a * this.b;
+            };
+        }
+
+        let calc2 = new calc();
+        calc2.read();
+
+        alert('sum=' + calc2.sum());
+        alert('mul=' + calc2.mul());
+    </script>
+</body>
+</html>

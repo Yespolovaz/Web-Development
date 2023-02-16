@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">]]
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getDateAgo(date, days) {
+            let dateCopy = new Date(date);
+            dateCopy.setDate(date.getDate() - days);
+            return dateCopy.getDate();
+        }
+    </script>
+</body>
+</html>

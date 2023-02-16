@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">]]
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getMaxSubSum(arr) {
+            let msum = 0;
+            let psum = 0;
+            for (let i of arr) { 
+                psum += i;
+                msum = Math.max(msum, psum);
+                if (psum<0) psum=0;
+            }
+            return msum;
+        }
+    </script>
+</body>
+</html>

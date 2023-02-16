@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Acc(n) {
+            this.val = n;
+
+            this.read = function() {
+                this.val += +prompt('How much to add?', 0);
+            };
+        }
+            let acc = new Acc(1);
+            acc.read();
+            acc.read();
+            alert(acc.val);
+    </script>
+</body>
+</html>
