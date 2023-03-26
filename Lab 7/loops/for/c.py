@@ -1,6 +1,9 @@
-n = int(input())
-s = 1
+import math
 
-for i in range(1, n+1):
-    s *= 2
-print(s)
+a = int(input())
+b = int(input())
+
+for i in range(a, b+1):
+    c = int(math.sqrt(i))
+    if c ** 2 == i:
+        print(i, end = ' ')

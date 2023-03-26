@@ -1,8 +1,9 @@
-import math
-
-a = int(input())
-n = int(input())
+x = int(input())
+n = str(x)
 s = 0
-for i in range(n+1):
-    s += pow(a, i)
+
+for i in range(len(n)+1):
+    t = x%10
+    s += t
+    x //= 10
 print(s)

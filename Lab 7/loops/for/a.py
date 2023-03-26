@@ -1,5 +1,5 @@
-n = int(input())
-s = 0
-for i in range(1, n+1):
-    s += i ** 2
-print(s)
+a = int(input())
+b = int(input())
+for i in range(a, b+1):
+    if i%2==0:
+        print(i)
