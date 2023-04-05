@@ -2,9 +2,6 @@ from django.shortcuts import render
 from django.http.response import JsonResponse
 from .models import Product, Category
 
-def index(request):
-    return JsonResponse({'message': ' '})
-
 def product_list(request):
     products = Product.objects.all()
     products_json = [product.to_json() for product in products]
